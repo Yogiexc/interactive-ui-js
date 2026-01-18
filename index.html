@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive UI menggunakan Vanilla JavaScript - DOM Manipulation & Event Handling">
+    <title>Interactive UI - Vanilla JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar dengan Scroll Effect -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo">🎯</span>
+                <span>Interactive UI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="icon-light">☀️</span>
+                <span class="icon-dark">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Pure JavaScript UI</h1>
+            <p>Memahami fundamental DOM tanpa framework</p>
+            <button class="btn-primary" id="openModal">
+                Buka Modal Demo
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Fitur Interactive</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌓</div>
+                    <h3>Dark Mode Toggle</h3>
+                    <p>Manipulasi DOM class & localStorage untuk persistent theme</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Modal Popup</h3>
+                    <p>Event handling & keyboard support dengan ESC key</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3>Scroll Effects</h3>
+                    <p>Scroll listener dengan throttling & smooth transition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Tentang Project</h2>
+            <div class="about-content">
+                <p>
+                    Project ini dibuat untuk memahami fundamental DOM manipulation 
+                    tanpa framework. Setiap fitur menggunakan pure JavaScript 
+                    untuk menunjukkan cara kerja browser dan event-driven UI.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Vanilla JavaScript</span>
+                    <span class="tech-badge">ES6+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>🎉 Modal Demo</h2>
+            <p>Modal ini dibuat dengan vanilla JavaScript!</p>
+            <ul class="modal-features">
+                <li>✅ Click overlay untuk close</li>
+                <li>✅ Tekan ESC untuk close</li>
+                <li>✅ Smooth animation</li>
+                <li>✅ Event bubbling handled</li>
+                <li>✅ Body scroll prevention</li>
+            </ul>
+            <button class="btn-secondary" id="closeModalBtn">
+                Tutup Modal
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Interactive UI Project. Built with ❤️ using Vanilla JavaScript.</p>
+            <p class="footer-subtitle">Zero Dependencies • Pure DOM Manipulation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
